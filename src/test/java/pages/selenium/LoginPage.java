@@ -1,7 +1,8 @@
 package pages.selenium;
 
-import lib.selenium.PreAndPost;
 
-public class LoginPage extends PreAndPost {
+import lib.selenium.ProjectSpecificMethods;
+
+public class LoginPage extends ProjectSpecificMethods {
 
 }

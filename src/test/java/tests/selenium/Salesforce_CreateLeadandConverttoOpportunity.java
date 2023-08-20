@@ -1,12 +1,13 @@
 package tests.selenium;
 
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeTest; 
 import org.testng.annotations.Test;
 
-import lib.selenium.PreAndPost;
+
+import lib.selenium.ProjectSpecificMethods;
 import pages.selenium.LoginPage;
 
-public class Salesforce_CreateLeadandConverttoOpportunity extends PreAndPost {
+public class Salesforce_CreateLeadandConverttoOpportunity extends ProjectSpecificMethods {
 	
 	@BeforeTest
 	public void setValues() {
@@ -23,14 +24,7 @@ public class Salesforce_CreateLeadandConverttoOpportunity extends PreAndPost {
 	@Test(dataProvider = "fetchData")
 	public void createLead(String filter, String user, String short_desc) throws InterruptedException {
 		
-		new LoginPage(driver, test)
-		.loginApp()
-		.searchUsingFilter(filter)
-		.clickCreateNew()
-		.getIncidentNumber()
-		.selectUser(user)
-		.typeShortDescription(short_desc)
-		.clickSubmit();
+		
 		
 	}
 

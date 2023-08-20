@@ -1,0 +1,73 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Eclipse metadata files that can be ignored  
+.classpath  
+.editorconfig  
+.factorypath  
+.gitattributes  
+.project  
+.settings/  
+bin/  
+  
+target/  
+# maven project related ignore files and directories  
+.mvn/  
+target/ 
+
+
+# compiled output
+builds
+/target
+target
+/dist
+test-output/
+/test-output
+reports
+/reports
+/tmp
+/out-tsc
+env.js
+# dependencies
+/node
+/node_modules
+node/
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+.vscode
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+
+# e2e
+/e2e/*.map
+
+# System Files
+.DS_Store
+Thumbs.db
+*.log
+*.gz
+
+#Mac OS
+**/.DS_Store
+logs*
